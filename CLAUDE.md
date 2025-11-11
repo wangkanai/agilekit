@@ -188,3 +188,7 @@ When proposing changes:
 - **DoR**: Definition of Ready
 - **DoD**: Definition of Done
 - **WIP**: Work in Progress (limits should be respected)
+
+
+*Version: 1.0*
+*Last Updated: 2024-06-10*
