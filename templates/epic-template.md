@@ -1,4 +1,4 @@
-# Epic specification [EPIC NAME]
+# Epic Specification [EPIC NAME]
 
 ## Business Context
 <!-- Describe the business context and background for this epic. Why is it important? -->
