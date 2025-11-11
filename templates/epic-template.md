@@ -13,8 +13,12 @@
 <!-- How will success be measured for this epic? List quantitative and/or qualitative metrics. -->
 
 ## Scope
-<!-- What is included in the scope of this epic? What is explicitly out of scope? -->
 
+### In Scope
+<!-- List what is included in the scope of this epic. -->
+
+### Out of Scope
+<!-- List what is explicitly out of scope for this epic. -->
 ## Dependencies
 <!-- List any dependencies on other teams, systems, or epics. -->
 
