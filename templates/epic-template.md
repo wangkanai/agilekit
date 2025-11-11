@@ -33,3 +33,6 @@
 
 ## Features
 <!-- List and briefly describe the features or user stories included in this epic. -->
+
+*Version: 1.0*
+*Last Updated: 2024-06-01*
