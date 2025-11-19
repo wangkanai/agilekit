@@ -27,26 +27,25 @@ Located in `docs/framework/`:
 
 ### Agile Components
 
-Located in `docs/agile-components/`:
+Located in `docs/components/`:
 
-- **[PLANNING.md](docs/agile-components/PLANNING.md)** - Multi-level planning processes and techniques
-- **[SPRINT.md](docs/agile-components/SPRINT.md)** - Sprint iteration lifecycle and ceremonies
-- **[EPIC.md](docs/agile-components/EPIC.md)** - Epic definition and management
-- **[FEATURE.md](docs/agile-components/FEATURE.md)** - Feature specification and tracking
-- **[USER_STORY.md](docs/agile-components/USER_STORY.md)** - User story creation and management
-- **[TASK.md](docs/agile-components/TASK.md)** - Task breakdown and execution
-- **[BUG.md](docs/agile-components/BUG.md)** - Bug reporting and resolution
+- **[PLANNING.md](docs/components/PLANNING.md)** - Multi-level planning processes and techniques
+- **[SPRINT.md](docs/components/SPRINT.md)** - Sprint iteration lifecycle and ceremonies
+- **[EPIC.md](docs/components/EPIC.md)** - Epic definition and management
+- **[FEATURE.md](docs/components/FEATURE.md)** - Feature specification and tracking
+- **[USER_STORY.md](docs/components/USER_STORY.md)** - User story creation and management
+- **[TASK.md](docs/components/TASK.md)** - Task breakdown and execution
+- **[BUG.md](docs/components/BUG.md)** - Bug reporting and resolution
 
 ## Work Item Hierarchy
 
 ```
 Epic (Strategic initiative, 1-6 months)
-├── Feature (User-facing capability, 1-4 sprints)
-│   ├── User Story (Single sprint deliverable)
-│   │   ├── Task (Hours of work)
-│   │   └── Bug (Defect related to story)
-│   └── Bug (Defect related to feature)
-└── Bug (Defect related to epic)
+└── Feature (User-facing capability, 1-4 sprints)
+    ├── User Story (Single sprint deliverable)
+    │   ├── Task (Hours of work)
+    │   └── Bug (Defect related to story)
+    └── Bug (Defect related to feature)
 ```
 
 ## Key Features
