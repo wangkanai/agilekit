@@ -19,4 +19,4 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 ## Outline
 
-<!--create the outline here->
+<!--create the outline here-->
