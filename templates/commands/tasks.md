@@ -1,4 +1,5 @@
 ---
+description: Create a detailed sprint document for the project.
 ---
 
 ## User Input

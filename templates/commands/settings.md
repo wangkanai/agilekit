@@ -1,5 +1,5 @@
 ---
-
+description: Create a detailed settings document for the project.
 ---
 
 ## User Input
