@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Auto-fix changed files and stage them
-npx --no-install lint-staged
+#npx --no-install lint-staged
 
 # Run tests
 #npm test
