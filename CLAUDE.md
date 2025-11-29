@@ -39,6 +39,7 @@ Epic (Strategic initiative, 1-6 months)
 ```
 
 **Key relationships:**
+
 - Epics contain Features and may have direct Bugs
 - Features contain User Stories and may have direct Bugs
 - User Stories contain Tasks and may have direct Bugs
@@ -49,26 +50,31 @@ Epic (Strategic initiative, 1-6 months)
 When working with this codebase, always adhere to these constitutional principles:
 
 ### 1. AI-Human Collaboration
+
 - AI facilitates and orchestrates, humans decide and create
 - Never make business decisions without human input
 - Provide recommendations, not mandates
 
 ### 2. Agile Methodology Adherence
+
 - Follow established agile practices (Scrum/Kanban)
 - Support iterative and incremental development
 - Enable continuous feedback and adaptation
 
 ### 3. Transparency and Accountability
+
 - All AI decisions must be explainable
 - Maintain clear audit trails
 - Provide stakeholder visibility
 
 ### 4. Flexibility and Extensibility
+
 - Adapt to different team sizes and project types
 - Support customization and extension
 - Enable integration with existing tools
 
 ### 5. Quality and Sustainability
+
 - Enforce quality standards throughout lifecycle
 - Support long-term maintainability
 - Promote sustainable development practices
@@ -93,14 +99,18 @@ The framework follows these architectural patterns:
 ## Standards and Quality Gates
 
 ### Definition of Ready (DoR)
+
 Work items ready for sprint when:
+
 - Clearly described and understood
 - Acceptance criteria defined
 - Dependencies identified
 - Estimated and sized appropriately
 
 ### Definition of Done (DoD)
+
 Work items done when:
+
 - Code complete and reviewed
 - Tests written and passing
 - Documentation updated
@@ -108,6 +118,7 @@ Work items done when:
 - Deployed to appropriate environment
 
 ### User Story Format
+
 Always follow: "As a [role], I want [feature], so that [benefit]"
 
 ## Documentation Conventions
@@ -128,21 +139,27 @@ When creating or modifying documentation in this repository:
 ## Working with Framework Documents
 
 ### Constitution (docs/framework/CONSTITUTION.md)
+
 The foundational document. Changes require:
+
 1. Proposal by stakeholder
 2. Review by framework maintainers
 3. Consensus approval
 4. Version-controlled update
 
 ### Standards (docs/framework/STANDARDS.md)
+
 Defines quality gates, coding standards, process standards. Reference this for:
+
 - Work item requirements
 - Development practices
 - Quality criteria
 - Metrics and reporting
 
 ### Architecture (docs/framework/ARCHITECTURE.md)
+
 System design and component specifications. Consult for:
+
 - Component responsibilities
 - Data models
 - Integration patterns
@@ -151,6 +168,7 @@ System design and component specifications. Consult for:
 ## Working with Agile Components
 
 Each component document (EPIC.md, FEATURE.md, USER_STORY.md, TASK.md, BUG.md, PLANNING.md, SPRINT.md) follows this structure:
+
 - Purpose and definition
 - Standards and criteria
 - Lifecycle states
@@ -171,6 +189,7 @@ The repository currently contains **no executable code** - it is a specification
 ## Contributing Guidelines
 
 When proposing changes:
+
 1. Ensure alignment with Constitutional principles
 2. Maintain consistency with existing Standards
 3. Consider architectural implications
@@ -189,6 +208,5 @@ When proposing changes:
 - **DoD**: Definition of Done
 - **WIP**: Work in Progress (limits should be respected)
 
-
-*Version: 1.0*
-*Last Updated: 2025-11-11*
+_Version: 1.0_
+_Last Updated: 2025-11-11_
