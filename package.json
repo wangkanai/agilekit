@@ -35,7 +35,7 @@
       "npm run format:fix"
     ],
     "*.yaml": [
-      "eslint --fix",
+      "tslint --fix",
       "npm run format:fix"
     ],
     "*.{json,md}": [
