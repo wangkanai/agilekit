@@ -1,0 +1,6 @@
+# Test fixtures with intentionally broken/malformed files
+tests/fixtures/**
+
+# Agile runtime folders (user-specific, not in repo)
+.agile/
+.agile*/
