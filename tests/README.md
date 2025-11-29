@@ -48,4 +48,5 @@ The `tests/` workspace defines how AgileKit verifies its documentation-first fra
 5. **Run Tests** – For now, walk through the manual checklist; when automation is available, execute `npm test` locally before opening a PR.
 
 ---
+
 Version 0.1.0 · Last Updated: 2025-11-29

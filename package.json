@@ -22,7 +22,11 @@
 	"scripts": {
 		"build": "tsc",
 		"start:dev": "ts-node src/index.ts",
-		"prepare": "husky install",
+		"format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
+		"format:fix": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
+		"lint": "tslint *.ts,*tsx,*.md,*.yaml",
+		"lint:fix": "tslint *.ts,*tsx,*.md,*.yaml --fix",
+		"prepare": "husky",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"dependencies": {
@@ -32,10 +36,25 @@
 	"devDependencies": {
 		"@types/node": "^24.10.1",
 		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
 		"prettier": "^3.7.2",
 		"prettier-plugin-packagejson": "^2.5.20",
 		"ts-node": "^10.9.2",
+		"tslint": "^5.20.1",
 		"typescript": "^5.9.3"
+	},
+	"lint-staged": {
+		"*.{ts,tsx}": [
+			"npm run lint:fix",
+			"npm run format:fix"
+		],
+		"*.yaml": [
+			"tslint --fix",
+			"npm run format:fix"
+		],
+		"*.{json,md}": [
+			"npm run format:fix"
+		]
 	},
 	"engines": {
 		"node": ">=20"

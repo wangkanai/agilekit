@@ -10,20 +10,20 @@ This `GEMINI.md` file provides specific context and instructions for Gemini agen
 
 ## Directory Structure & Purpose
 
-*   **`/docs/`**: The core knowledge base of the framework.
-    *   `framework/`: Foundational documents (Constitution, Standards, Architecture). **Crucial for understanding the rules.**
-    *   `components/`: Detailed specifications for Agile entities (Epic, Feature, User Story, Task, Bug, Sprint, Planning).
-*   **`/templates/`**: Markdown templates for creating new Agile artifacts (e.g., `epic-template.md`).
-    *   `commands/`: Prompt templates or instructions for specific AI agent actions (e.g., `analyze.md`, `story.md`).
-*   **`/scripts/`**: Utility scripts (`bash` and `powershell`) for maintenance or automation tasks.
-*   **`/src/`**: Reserved for future implementation code (currently empty).
+- **`/docs/`**: The core knowledge base of the framework.
+  - `framework/`: Foundational documents (Constitution, Standards, Architecture). **Crucial for understanding the rules.**
+  - `components/`: Detailed specifications for Agile entities (Epic, Feature, User Story, Task, Bug, Sprint, Planning).
+- **`/templates/`**: Markdown templates for creating new Agile artifacts (e.g., `epic-template.md`).
+  - `commands/`: Prompt templates or instructions for specific AI agent actions (e.g., `analyze.md`, `story.md`).
+- **`/scripts/`**: Utility scripts (`bash` and `powershell`) for maintenance or automation tasks.
+- **`/src/`**: Reserved for future implementation code (currently empty).
 
 ## Key Files
 
-*   **`README.md`**: High-level project entry point.
-*   **`AGENTS.md` & `CLAUDE.md`**: Existing guidelines for AI agents. Use these as a reference for tone and behavioral expectations.
-*   **`docs/framework/CONSTITUTION.md`**: The supreme law of this framework. **All generated content must align with these principles.**
-*   **`docs/framework/STANDARDS.md`**: Defines quality gates (Definition of Ready/Done), naming conventions, and process standards.
+- **`README.md`**: High-level project entry point.
+- **`AGENTS.md` & `CLAUDE.md`**: Existing guidelines for AI agents. Use these as a reference for tone and behavioral expectations.
+- **`docs/framework/CONSTITUTION.md`**: The supreme law of this framework. **All generated content must align with these principles.**
+- **`docs/framework/STANDARDS.md`**: Defines quality gates (Definition of Ready/Done), naming conventions, and process standards.
 
 ## Workflow & Usage
 
@@ -37,16 +37,17 @@ As a Gemini agent, your role in this repository will likely involve:
 ## Critical Context: The Work Item Hierarchy
 
 You must strictly respect this hierarchy:
+
 1.  **Epic** (Strategic, 1-6 months)
 2.  **Feature** (User-facing, 1-4 sprints)
 3.  **User Story** (Single sprint deliverable)
 4.  **Task** (Hours of work)
 
-*Bugs can be attached at any level.*
+_Bugs can be attached at any level._
 
 ## Guiding Principles for Gemini
 
-*   **AI-Human Collaboration**: You assist and facilitate; humans decide. Do not make business decisions autonomously.
-*   **Transparency**: Your outputs must be explainable.
-*   **Consistency**: Mimic the existing Markdown style (headers, bullet points, cross-links).
-*   **Safety**: Since this is a repo of standards, ensure your suggestions do not lower the quality bar defined in `STANDARDS.md`.
+- **AI-Human Collaboration**: You assist and facilitate; humans decide. Do not make business decisions autonomously.
+- **Transparency**: Your outputs must be explainable.
+- **Consistency**: Mimic the existing Markdown style (headers, bullet points, cross-links).
+- **Safety**: Since this is a repo of standards, ensure your suggestions do not lower the quality bar defined in `STANDARDS.md`.

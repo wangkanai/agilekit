@@ -9,6 +9,7 @@ AgileKit provides a comprehensive framework for AI to assist with agile software
 ## Purpose
 
 AgileKit enables AI to:
+
 - Orchestrate and facilitate agile development processes
 - Provide structure and standards for software development
 - Manage work items across the entire agile hierarchy
@@ -51,18 +52,21 @@ Epic (Strategic initiative, 1-6 months)
 ## Key Features
 
 ### AI-Augmented Agile
+
 - Intelligent recommendations for planning and estimation
 - Automated status tracking and reporting
 - Predictive analytics for sprint completion
 - Pattern recognition and best practice suggestions
 
 ### Comprehensive Standards
+
 - Development standards (code, testing, security)
 - Process standards (sprint, documentation, communication)
 - Work item standards (epics, features, stories, tasks, bugs)
 - Quality standards (Definition of Ready and Done)
 
 ### Flexible Architecture
+
 - Modular, extensible design
 - Event-driven processing
 - Integration with existing tools
