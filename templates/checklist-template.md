@@ -38,3 +38,6 @@
 - Add comments or findings inline
 - Link to relevant resources or documentation
 - Items are numbered sequentially for easy reference
+
+_Version: 1.0_
+_Last Updated: 2025-11-29_
