@@ -24,8 +24,8 @@
 		"start:dev": "ts-node src/index.ts",
 		"format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
 		"format:fix": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
-		"lint": "tslint *.ts,*tsx,*.md,*.yaml",
-		"lint:fix": "tslint *.ts,*tsx,*.md,*.yaml --fix",
+		"lint": "tslint *.ts,*tsx,*.json,*.md,*.yaml",
+		"lint:fix": "tslint *.ts,*tsx,*.json,*.md,*.yaml --fix",
 		"prepare": "husky",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
