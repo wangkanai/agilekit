@@ -132,9 +132,9 @@ Changes to this constitution require:
 
 ## Relationships
 
-- **[STANDARDS.md](standards.md)**: Detailed quality and process standards
-- **[ARCHITECTURE.md](architecture.md)**: System design and technical decisions
-- **[FRAMEWORK.md](framework.md)**: Framework implementation details
+- **[standards.md](standards.md)**: Detailed quality and process standards
+- **[architecture.md](architecture.md)**: System design and technical decisions
+- **[framework.md](framework.md)**: Framework implementation details
 
 ---
 

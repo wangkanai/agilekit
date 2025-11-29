@@ -62,9 +62,9 @@ Using the template at `rules/constitution.md`, create a project-specific constit
 
 Ensure the generated constitution:
 
-- [ ] Follows the user story format: "As a [role], I want [feature], so that [benefit]"
+- [ ] Correctly defines the user story format: "As a [role], I want [feature], so that [benefit]"
 - [ ] Includes all mandatory sections from the template
-- [ ] Has proper cross-references to STANDARDS.md and ARCHITECTURE.md
+- [ ] Has proper cross-references to standards.md and architecture.md
 - [ ] Contains version number and last updated date
 - [ ] Aligns with AgileKit framework principles
 
