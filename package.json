@@ -1,75 +1,75 @@
 {
-	"$schema": "https://json.schemastore.org/package.json",
-	"name": "agilekit",
-	"version": "1.0.0",
-	"type": "module",
-	"description": "AgileKit provides a comprehensive framework for AI to assist with agile software development processes.",
-	"license": "Apache-2.0",
-	"author": "Sarin Na Wangkanai",
-	"homepage": "https://github.com/wangkanai/agilekit",
-	"keywords": [
-		"agile",
-		"ai",
-		"orchestrator",
-		"agents",
-		"development",
-		"methodology"
-	],
-	"main": "src/index.ts",
-	"bin": {
-		"agile": "./dist/index.js"
-	},
-	"scripts": {
-		"build": "tsc",
-		"start:dev": "ts-node src/index.ts",
-		"format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
-		"format:fix": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
-		"lint": "tslint *.ts,*tsx,*.md,*.yaml",
-		"lint:fix": "tslint *.ts,*tsx,*.md,*.yaml --fix",
-		"prepare": "husky",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"dependencies": {
-		"commander": "^14.0.2",
-		"semver": "^7.7.3"
-	},
-	"devDependencies": {
-		"@types/node": "^24.10.1",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.2.7",
-		"prettier": "^3.7.2",
-		"prettier-plugin-packagejson": "^2.5.20",
-		"ts-node": "^10.9.2",
-		"tslint": "^5.20.1",
-		"typescript": "^5.9.3"
-	},
-	"lint-staged": {
-		"*.{ts,tsx}": [
-			"npm run lint:fix",
-			"npm run format:fix"
-		],
-		"*.yaml": [
-			"tslint --fix",
-			"npm run format:fix"
-		],
-		"*.{json,md}": [
-			"npm run format:fix"
-		]
-	},
-	"engines": {
-		"node": ">=20"
-	},
-	"bugs": {
-		"url": "https://github.com/wangkanai/agilekit/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/wangkanai/agilekit.git"
-	},
-	"directories": {
-		"doc": "docs"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "agilekit",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AgileKit provides a comprehensive framework for AI to assist with agile software development processes.",
+  "license": "Apache-2.0",
+  "author": "Sarin Na Wangkanai",
+  "homepage": "https://github.com/wangkanai/agilekit",
+  "keywords": [
+    "agile",
+    "ai",
+    "orchestrator",
+    "agents",
+    "development",
+    "methodology"
+  ],
+  "main": "src/index.ts",
+  "bin": {
+    "agile": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start:dev": "ts-node src/index.ts",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
+    "lint": "tslint *.ts,*tsx,*.md,*.yaml",
+    "lint:fix": "tslint *.ts,*tsx,*.md,*.yaml --fix",
+    "prepare": "husky",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "semver": "^7.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.2",
+    "prettier-plugin-packagejson": "^2.5.20",
+    "ts-node": "^10.9.2",
+    "tslint": "^5.20.1",
+    "typescript": "^5.9.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint:fix",
+      "npm run format:fix"
+    ],
+    "*.yaml": [
+      "tslint --fix",
+      "npm run format:fix"
+    ],
+    "*.{json,md}": [
+      "npm run format:fix"
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bugs": {
+    "url": "https://github.com/wangkanai/agilekit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangkanai/agilekit.git"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
