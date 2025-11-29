@@ -58,38 +58,46 @@ agile/features/[####-feature]/
 ```text
 # [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
 src/
-├── Domain/
-├── Application/
-├── Infrastructure/
-└── Persistence/
+├── domain/
+├── application/
+├── infrastructure/
+├── persistence/
+└── cli/
 
 tests/
-├── Integration/
-├── Functional/
-└── Unit/
+├── integration/
+├── functional/
+└── unit/
 
 # [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
 backend/
 ├── src/
-│   ├── Domain/
-│   ├── Application/
-│   ├── Infrastructure/
-│   ├── Persistence/
-│   └── Server/
+│   ├── domain/
+│   ├── application/
+│   ├── infrastructure/
+│   ├── persistence/
+│   └── server/
 └── tests/
+    ├── integration/
+    ├── functional/
+    └── unit/
 
 frontend/
 ├── src/
 │   ├── components/
 │   ├── pages/
+│   ├── hooks/
 │   └── services/
 └── tests/
+    ├── Integration/
+    ├── Functional/
+    └── Unit/
 
 # [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
 api/
 └── [same as backend above]
 
-ios/ or android/
+mobile/
 └── [platform-specific structure: feature modules, UI flows, platform tests]
 ```
 
