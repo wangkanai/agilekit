@@ -17,7 +17,7 @@
 	],
 	"main": "src/index.ts",
 	"bin": {
-		"agilekit": "./dist/index.js"
+		"agile": "./dist/index.js"
 	},
 	"scripts": {
 		"build": "tsc",
