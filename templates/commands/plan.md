@@ -1,5 +1,5 @@
 ---
-description: Implement the current working feature based on the detailed plan and tasks.
+description: Create a detailed implementation plan for this current working feature.
 ---
 
 ## User Input
