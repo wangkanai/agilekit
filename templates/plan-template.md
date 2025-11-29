@@ -1,6 +1,6 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `[####-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/agile/features/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/agile.plan` command. See `.agile/templates/commands/plan.md` for the execution workflow.
@@ -38,13 +38,13 @@
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit.plan command output)
-├── research.md          # Phase 0 output (/speckit.plan command)
-├── data-model.md        # Phase 1 output (/speckit.plan command)
-├── quickstart.md        # Phase 1 output (/speckit.plan command)
-├── contracts/           # Phase 1 output (/speckit.plan command)
-└── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
+agile/features/[####-feature]/
+├── plan.md              # This file (/agile.plan command output)
+├── research.md          # Phase 0 output (/agile.plan command)
+├── data-model.md        # Phase 1 output (/agile.plan command)
+├── quickstart.md        # Phase 1 output (/agile.plan command)
+├── contracts/           # Phase 1 output (/agile.plan command)
+└── tasks.md             # Phase 2 output (/agile.tasks command - NOT created by /agile.plan)
 ```
 
 ### Source Code (repository root)
@@ -58,22 +58,24 @@ specs/[###-feature]/
 ```text
 # [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
 src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+├── Domain/
+├── Application/
+├── Infrastructure/
+└── Persistence/
 
 tests/
-├── contract/
-├── integration/
-└── unit/
+├── Integration/
+├── Functional/
+└── Unit/
 
 # [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
 backend/
 ├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
+│   ├── Domain/
+│   ├── Application/
+│   ├── Infrastructure/
+│   ├── Persistence/
+│   └── Server/
 └── tests/
 
 frontend/
