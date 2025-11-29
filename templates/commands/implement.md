@@ -1,4 +1,5 @@
 ---
+description: Implement the current working feature based on the detailed plan and tasks.
 ---
 
 ## User Input
