@@ -1,6 +1,6 @@
 import { program } from "commander";
 
-program.command("init")
+program.command("upgrade")
     .description("Initialize a new AgileKit project")
     .action(() => {
         console.log("Initializing a new AgileKit project...");
