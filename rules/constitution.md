@@ -1,5 +1,5 @@
 # [PROJECT_NAME] Constitution
-<!-- Example: Agile Constitution, TaskFlow Constitution, etc. -->
+<!-- Example: Agile Constitution, Enterprise Constitution, etc. -->
 
 ## Core Rules
 
