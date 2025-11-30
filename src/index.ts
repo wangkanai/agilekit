@@ -2,13 +2,13 @@
 
 import { program } from "commander";
 
+import "./commands/init.js";
+import "./commands/upgrade.js";
+import "./commands/check.js";
+
 program
   .name("agilekit")
   .version("1.0.0")
   .description("AgileKit CLI tool");
-
-program.addCommand(require("./commands/init").default);
-program.addCommand(require("./commands/upgrade").default);
-program.addCommand(require("./commands/check").default);
 
 program.parse(process.argv);

@@ -1,8 +1,12 @@
 import { program } from "commander";
 
+interface InitOptions {
+    verbose?: boolean;
+}
+
 program.command("init")
     .description("Initialize a new AgileKit project")
-    .action(() => {
+    .action(async (options: InitOptions) => {
         console.log("Initializing a new AgileKit project...");
         // Add initialization logic here
         console.log("Project initialized successfully!");
