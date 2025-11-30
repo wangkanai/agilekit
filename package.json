@@ -20,7 +20,7 @@
 		"agile": "./dist/index.js"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && chmod +x dist/index.js",
 		"start:dev": "ts-node src/index.ts",
 		"format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml}\"",
 		"format:fix": "prettier --write \"**/*.{ts,tsx,json,md,yaml}\"",
