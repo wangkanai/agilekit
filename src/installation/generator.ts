@@ -5,3 +5,5 @@ class ProjectGenerator {
         console.log("Project generated successfully!");
     }
 }
+
+export { ProjectGenerator };
