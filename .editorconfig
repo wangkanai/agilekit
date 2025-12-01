@@ -492,13 +492,7 @@ ij_powershell_space_after_type_cast              = false
 ij_powershell_align_multiline_binary_operation   = true
 ij_powershell_align_multiline_chained_methods    = true
 
-[*.{ts, js, js.map}]
-indent_size = 2
-
 [*.{yml,yaml}]
-indent_size = 2
-
-[*.{csproj,slnx,props,targets}]
 indent_size = 2
 
 [*.svg]
