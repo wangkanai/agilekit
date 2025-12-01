@@ -453,11 +453,10 @@ file_header_template                    = Copyright (c) 2014-2025 Sarin Na Wangk
 dotnet_sort_system_directives_first     = true
 dotnet_separate_import_directive_groups = true
 
-[*.{ts, tsx, js, js.map}]
-file_header_template                    = Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved.
-indent_size = 2
-# TypeScript React files: disable line wrapping to keep route definitions single-line
-max_line_length = off
+[*.{ts, tsx, mts, mtsx}]
+file_header_template          = Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved.
+indent_size                   = 2
+max_line_length               = off
 ij_typescript_wrap_long_lines = false
 
 [*.{cshtml,razor,html}]
