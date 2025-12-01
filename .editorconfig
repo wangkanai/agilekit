@@ -448,12 +448,12 @@ dotnet_diagnostis.CS1591.severity                                               
 dotnet_diagnostis.CS8981.severity                                                = none # Type name only contains lower-cased ascii characters
 dotnet_diagnostis.CS8618.severity                                                = none # Consider adding the 'required' modifier or declaring the property as nullable.
 
-[*.{cs, cpp, h}]
+[*.{cs,cpp,h}]
 file_header_template                    = Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved.
 dotnet_sort_system_directives_first     = true
 dotnet_separate_import_directive_groups = true
 
-[*.{ts, tsx, mts, mtsx}]
+[*.{ts,tsx,mts,mtsx}]
 file_header_template          = Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved.
 indent_size                   = 2
 max_line_length               = off
