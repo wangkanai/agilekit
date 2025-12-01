@@ -8,7 +8,8 @@ import "./commands/check.js";
 
 program
   .name("agilekit")
-  .version("1.0.0")
+  .version("1.0.0", "-v, --version", "output the version number")
+  .alias("agile")
   .description("AgileKit CLI tool");
 
 program.parse(process.argv);
