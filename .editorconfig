@@ -478,7 +478,7 @@ ij_html_do_not_break_if_inline_tags                                    = title, 
 ij_html_do_not_indent_children_of_tags                                 = form, ul, ol, script, style, h1, h2, h3, h4, h5, h6, table, thead, tbody, tfoot
 
 # Ignore formatter for generated files
-[{**/node_modules/*,**/lib/*,**/Migrations/*,**/wwwroot/dist/**}]
+[{**/node_modules/*,**/lib/*,**/dist/*}]
 generated_code       = true
 ij_formatter_enabled = false
 
