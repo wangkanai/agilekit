@@ -437,16 +437,16 @@ dotnet_diagnostic.IDE0012.severity                                              
 dotnet_diagnostic.IDE0055.severity                                               = silent # Formatting rule violations
 dotnet_diagnostic.IDE0161.severity                                               = warning # Use file-scoped namespace
 dotnet_diagnostic.IDE1006.severity                                               = silent # Naming rule violations
-dotnet_diagnostis.CA1000.severity                                                = none # Do not declare static members on generic types
-dotnet_diagnostis.CA1051.severity                                                = none # Do not declare visible instance fields
-dotnet_diagnostis.CA1304.severity                                                = none # string could vary based on the current user's locale setting
-dotnet_diagnostis.CA1310.severity                                                = none # string could vary based on the current user's locale setting
-dotnet_diagnostis.CA1510.severity                                                = none # Use 'ArgumentNullException.ThrowIfNull' instead of explicitly throwing a new exception instance
-dotnet_diagnostis.CA1711.severity                                                = none # Identifiers should not have incorrect suffix
-dotnet_diagnostis.CA1866.severity                                                = none # Use 'string.StartsWith(char)' instead of 'string.StartsWith(string)' when you have a string with a single char
-dotnet_diagnostis.CS1591.severity                                                = none # Missing XML comment for publicly visible type or member
-dotnet_diagnostis.CS8981.severity                                                = none # Type name only contains lower-cased ascii characters
-dotnet_diagnostis.CS8618.severity                                                = none # Consider adding the 'required' modifier or declaring the property as nullable.
+dotnet_diagnostic.CA1000.severity                                                = none # Do not declare static members on generic types
+dotnet_diagnostic.CA1051.severity                                                = none # Do not declare visible instance fields
+dotnet_diagnostic.CA1304.severity                                                = none # string could vary based on the current user's locale setting
+dotnet_diagnostic.CA1310.severity                                                = none # string could vary based on the current user's locale setting
+dotnet_diagnostic.CA1510.severity                                                = none # Use 'ArgumentNullException.ThrowIfNull' instead of explicitly throwing a new exception instance
+dotnet_diagnostic.CA1711.severity                                                = none # Identifiers should not have incorrect suffix
+dotnet_diagnostic.CA1866.severity                                                = none # Use 'string.StartsWith(char)' instead of 'string.StartsWith(string)' when you have a string with a single char
+dotnet_diagnostic.CS1591.severity                                                = none # Missing XML comment for publicly visible type or member
+dotnet_diagnostic.CS8981.severity                                                = none # Type name only contains lower-cased ascii characters
+dotnet_diagnostic.CS8618.severity                                                = none # Consider adding the 'required' modifier or declaring the property as nullable.
 
 [*.{cs,cpp,h}]
 file_header_template                    = Copyright (c) 2014-2025 Sarin Na Wangkanai, All Rights Reserved.
