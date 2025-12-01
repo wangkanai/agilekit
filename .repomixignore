@@ -1,0 +1,13 @@
+# Add patterns to ignore here, one per line
+
+# *.log
+tmp/
+dist/
+.husky/
+node_modules/
+.editorconfig
+.gitattributes
+.gitignore
+CODE_OF_CONDUCT.md
+LICENSE
+
