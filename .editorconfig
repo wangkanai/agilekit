@@ -461,12 +461,14 @@ ij_typescript_wrap_long_lines = false
 
 [*.{cshtml,razor,html}]
 max_line_length                                                        = 1000
+indent_access_specifiers_from_class                                    = true
 resharper_no_indent_inside_elements                                    = html, thead, tbody, tfoot
 resharper_no_indent_inside_if_element_longer_than                      = 1000
 resharper_normalize_tag_names                                          = true
 resharper_html_allow_far_alignment                                     = true
 resharper_html_attribute_indent                                        = single_indent
 resharper_html_attribute_style                                         = on_single_line
+resharper_html_dead_code_highlighting                                  = true
 resharper_html_linebreak_before_elements                               = body, div, p, main, section, article, form, h1, h2, h3, svg, path
 resharper_html_linebreak_before_multiline_elements                     = false
 resharper_html_linebreaks_inside_tags_for_elements_with_child_elements = false
@@ -498,12 +500,6 @@ indent_size = 2
 [*.svg]
 indent_size    = 2
 generated_code = true
-
-[*.{cshtml,razor,html,htm}]
-indent_size                            = 3
-indent_access_specifiers_from_class    = true
-resharper_html_dead_code_highlighting  = true
-ij_html_do_not_indent_children_of_tags = html, form, ul, ol, script, style, h1, h2, h3, h4, h5, h6, table, thead, tbody, tfoot
 
 [*.{scss,sass,less,css}]
 max_line_length                    = 300
