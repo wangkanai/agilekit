@@ -3,14 +3,14 @@
 
 ## Core Rules
 
-### Architecture
-`/rules/architecture.md`
-
 ### Framework
 `/rules/framework.md`
 
 ### Standards
 `/rules/standards.md`
+
+### Architecture
+`/rules/architecture.md`
 
 ## Core Principles
 
