@@ -51,6 +51,7 @@
 		"hereby": "^1.11.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.7",
+		"markdownlint-cli2": "^0.19.1",
 		"minimist": "^1.2.8",
 		"mocha": "^11.7.5",
 		"ms": "^2.1.3",
