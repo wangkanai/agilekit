@@ -5,6 +5,7 @@ tags:
   - orchestrator
   - coordination
   - multi-agent
+  - collaboration
 color: purple
 ---
 
