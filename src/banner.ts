@@ -32,17 +32,17 @@ export class Banner {
     }
 
     public print(
-        startColor: [number, number, number] = [255, 182, 193],
-        endColor: [number, number, number] = [173, 216, 230]
+        startColor: [number, number, number] = [155, 186, 233],
+        endColor: [number, number, number] = [255, 182, 193]
     ): void {
         const lines = this.banner.split('\n').filter((line) => line.length > 0);
         const totalLines = lines.length;
 
-        for (let i = 0; i < totalLines; i++) {
+        lines.forEach((line, i) => {
             const t = totalLines > 1 ? i / (totalLines - 1) : 0;
             const color = this.interpolateColor(startColor, endColor, t);
-            console.log(this.applyColor(lines[i], color));
-        }
+            console.log(this.applyColor(line, color));
+        });
     }
 
     public toString(): string {
