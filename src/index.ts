@@ -6,6 +6,7 @@ import './commands/check.js';
 
 import { Command } from 'commander';
 import chalk from 'chalk';
+import { Banner } from './banner.js';
 
 const program = new Command();
 
@@ -14,5 +15,8 @@ program.name('agilekit')
     .description('AgileKit CLI tool');
 
 program.parse(process.argv);
+
+const banner = new Banner();
+banner.print();
 
 console.log(chalk.cyan('Welcome to AgileKit CLI!'), chalk.gray('Use --help to see available commands.'));
