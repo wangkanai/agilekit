@@ -1,16 +1,14 @@
 export class Banner {
     private banner: string = `
-    █████████             ███  ████           █████   ████  ███   █████
-    ███░░░░░███           ░░░  ░░███          ░░███   ███░  ░░░   ░░███
-   ░███    ░███   ███████ ████  ░███   ██████  ░███  ███    ████  ███████
-   ░███████████  ███░░███░░███  ░███  ███░░███ ░███████    ░░███ ░░░███░
-   ░███░░░░░███ ░███ ░███ ░███  ░███ ░███████  ░███░░███    ░███   ░███
-   ░███    ░███ ░███ ░███ ░███  ░███ ░███░░░   ░███ ░░███   ░███   ░███ ███
-   █████   █████░░███████ █████ █████░░██████  █████ ░░████ █████  ░░█████
-  ░░░░░   ░░░░░  ░░░░░███░░░░░ ░░░░░  ░░░░░░  ░░░░░   ░░░░ ░░░░░    ░░░░░
-                 ███ ░███
-                ░░██████
-                 ░░░░░░
+   ░███               ░██░██            ░██     ░██ ░██   ░██
+  ░██░██                 ░██            ░██    ░██        ░██
+ ░██  ░██   ░████████ ░██░██  ░███████  ░██   ░██   ░██░████████
+░█████████ ░██    ░██ ░██░██ ░██    ░██ ░███████    ░██   ░██
+░██    ░██ ░██    ░██ ░██░██ ░█████████ ░██   ░██   ░██   ░██
+░██    ░██ ░██   ░███ ░██░██ ░██        ░██    ░██  ░██   ░██
+░██    ░██  ░█████░██ ░██░██  ░███████  ░██     ░██ ░██    ░████
+                  ░██
+            ░███████
 `;
 
     private interpolateColor(
@@ -37,11 +35,15 @@ export class Banner {
     ): void {
         const lines = this.banner.split('\n').filter((line) => line.length > 0);
         const totalLines = lines.length;
+        const terminalWidth = process.stdout.columns || 80;
+        const maxLineWidth = Math.max(...lines.map((line) => line.length));
+        const padding = Math.max(0, Math.floor((terminalWidth - maxLineWidth) / 2));
+        const pad = ' '.repeat(padding);
 
         lines.forEach((line, i) => {
             const t = totalLines > 1 ? i / (totalLines - 1) : 0;
             const color = this.interpolateColor(startColor, endColor, t);
-            console.log(this.applyColor(line, color));
+            console.log(pad + this.applyColor(line, color));
         });
     }
 
