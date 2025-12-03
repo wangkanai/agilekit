@@ -18,5 +18,3 @@ program.parse(process.argv);
 
 const banner = new Banner();
 banner.print();
-
-console.log(chalk.cyan('Welcome to AgileKit CLI!'), chalk.gray('Use --help to see available commands.'));

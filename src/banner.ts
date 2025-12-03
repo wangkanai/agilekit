@@ -1,14 +1,16 @@
+import chalk from "chalk";
+
 export class Banner {
     private banner: string = `
-   ░███               ░██░██            ░██     ░██ ░██   ░██
-  ░██░██                 ░██            ░██    ░██        ░██
- ░██  ░██   ░████████ ░██░██  ░███████  ░██   ░██   ░██░████████
-░█████████ ░██    ░██ ░██░██ ░██    ░██ ░███████    ░██   ░██
-░██    ░██ ░██    ░██ ░██░██ ░█████████ ░██   ░██   ░██   ░██
-░██    ░██ ░██   ░███ ░██░██ ░██        ░██    ░██  ░██   ░██
-░██    ░██  ░█████░██ ░██░██  ░███████  ░██     ░██ ░██    ░████
-                  ░██
-            ░███████
+      ███                ██  ██             ██      ██  ██    ██
+     ██ ██                   ██             ██     ██         ██
+    ██   ██    ███████   ██  ██   ███████   ██    ██    ██ ████████
+   █████████  ██     ██  ██  ██  ██     ██  ███████     ██    ██
+   ██     ██  ██     ██  ██  ██  █████████  ██    ██    ██    ██
+   ██     ██  ██    ███  ██  ██  ██         ██     ██   ██    ██
+   ██     ██   █████ ██  ██  ██   ███████   ██      ██  ██     ████
+                     ██
+               ███████
 `;
 
     private interpolateColor(
@@ -31,7 +33,7 @@ export class Banner {
 
     public print(
         startColor: [number, number, number] = [155, 186, 233],
-        endColor: [number, number, number] = [255, 182, 193]
+        endColor: [number, number, number] = [224, 233, 201]
     ): void {
         const lines = this.banner.split('\n').filter((line) => line.length > 0);
         const totalLines = lines.length;
@@ -45,6 +47,11 @@ export class Banner {
             const color = this.interpolateColor(startColor, endColor, t);
             console.log(pad + this.applyColor(line, color));
         });
+
+        console.log(); // Empty line after banner
+        const tagline = 'Wangkanai AgileKit - Agile Agent Development Toolkit';
+        const taglinePadding = Math.max(0, Math.floor((terminalWidth - tagline.length) / 2));
+        console.log(' '.repeat(taglinePadding) + chalk.yellowBright.italic(tagline));
     }
 
     public toString(): string {
