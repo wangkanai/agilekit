@@ -1,17 +1,17 @@
 {
-  "chat.promptFilesRecommendations": {
-    "agile.settings": true,
-    "agile.constitution": true,
-    "agile.architecture": true,
-    "agile.standards": true,
-    "agile.framework": true,
-    "agile.feature": true,
-    "agile.plan": true,
-    "agile.tasks": true,
-    "agile.implement": true
-  },
-  "chat.tools.terminal.autoApprove": {
-    ".agile/scripts/bash/": true,
-    ".agile/scripts/powershell/": true
-  }
+   "chat.promptFilesRecommendations": {
+      "agile.settings": true,
+      "agile.constitution": true,
+      "agile.architecture": true,
+      "agile.standards": true,
+      "agile.framework": true,
+      "agile.feature": true,
+      "agile.plan": true,
+      "agile.tasks": true,
+      "agile.implement": true
+   },
+   "chat.tools.terminal.autoApprove": {
+      ".agile/scripts/bash/": true,
+      ".agile/scripts/powershell/": true
+   }
 }

@@ -1,5 +1,5 @@
 ---
-description: "Create a detailed outline for the implementation tasks based on user input."
+description: 'Create a detailed outline for the implementation tasks based on user input.'
 ---
 
 ## User Input

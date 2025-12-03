@@ -19,5 +19,6 @@ AgileKit is an AI-driven framework for orchestrating and facilitating software d
 - **WIP**: Work in Progress (limits should be respected)
 
 ---
+
 _Version: 1.0_
 _Last Updated: 2025-11-11_
