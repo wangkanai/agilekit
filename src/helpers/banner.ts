@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-export class Banner {
+class Banner {
     private banner: string = `
    ███                ██  ██             ██      ██  ██    ██
   ██ ██                   ██             ██     ██         ██
@@ -55,3 +55,4 @@ export class Banner {
     }
 }
 
+export const banner = new Banner();
