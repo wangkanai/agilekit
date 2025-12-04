@@ -5,10 +5,11 @@ import './commands/upgrade.js';
 import './commands/check.js';
 
 import { Command } from 'commander';
-import chalk from 'chalk';
-import { Banner } from './banner.js';
+import { Banner } from './helpers/banner.js';
+import { Help } from './helpers/help.js';
 
 const program = new Command();
+
 
 program.name('agilekit')
     .version('1.0.0', '-v, --version', 'output the version number')
@@ -18,5 +19,5 @@ program.parse(process.argv);
 
 const banner = new Banner();
 banner.print();
-
-console.log(chalk.cyan('Welcome to AgileKit CLI!'), chalk.gray('Use --help to see available commands.'));
+const help = new Help();
+help.hint();
