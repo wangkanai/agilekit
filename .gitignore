@@ -9,6 +9,7 @@ repomix-output.*
 # TypeScript build output
 *.tsbuildinfo
 dist/
+bin/
 
 # User-specific files
 *.rsuser

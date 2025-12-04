@@ -17,7 +17,7 @@
    ],
    "main": "src/index.ts",
    "bin": {
-      "agile": "./dist/index.js"
+      "agile": "./bin/index.js"
    },
    "scripts": {
       "build": "tsc && chmod +x dist/index.js",
@@ -27,7 +27,8 @@
       "lint": "tslint *.ts,*tsx,*.json,*.md,*.yaml",
       "lint:fix": "tslint *.ts,*tsx,*.json,*.md,*.yaml --fix",
       "prepare": "husky",
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "knip": "knip"
    },
    "dependencies": {
       "chalk": "^5.6.2",
@@ -52,6 +53,7 @@
       "globals": "^16.5.0",
       "hereby": "^1.11.1",
       "husky": "^9.1.7",
+      "knip": "^5.71.0",
       "lint-staged": "^16.2.7",
       "markdownlint-cli2": "^0.19.1",
       "minimist": "^1.2.8",
