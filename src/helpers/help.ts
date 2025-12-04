@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 
-export class Help {
+class Help {
     public hint(): void {
         if (process.argv.length <= 2) {
             const message = `Run 'agile --help' for usage information`;
@@ -11,3 +11,5 @@ export class Help {
         }
     }
 }
+
+export const help = new Help();

@@ -5,11 +5,10 @@ import './commands/upgrade.js';
 import './commands/check.js';
 
 import { Command } from 'commander';
-import { Banner } from './helpers/banner.js';
-import { Help } from './helpers/help.js';
+import { help } from './helpers/help.js';
+import { banner } from './helpers/banner.js';
 
 const program = new Command();
-
 
 program.name('agilekit')
     .version('1.0.0', '-v, --version', 'output the version number')
@@ -17,7 +16,5 @@ program.name('agilekit')
 
 program.parse(process.argv);
 
-const banner = new Banner();
 banner.print();
-const help = new Help();
 help.hint();
