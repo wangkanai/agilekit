@@ -13,11 +13,7 @@ class Banner {
             ███████
 `;
 
-    private interpolateColor(
-        start: [number, number, number],
-        end: [number, number, number],
-        t: number
-    ): [number, number, number] {
+    private interpolateColor(start: [number, number, number], end: [number, number, number], t: number): [number, number, number] {
         return [
             Math.round(start[0] + (end[0] - start[0]) * t),
             Math.round(start[1] + (end[1] - start[1]) * t),
