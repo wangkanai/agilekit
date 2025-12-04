@@ -7,7 +7,7 @@ class Spinner {
         setTimeout(() => {
             spinner.color = color;
             spinner.text = success;
-            spinner.succeed();
+            // spinner.succeed(); // Removed to let caller control spinner lifecycle
         }, timeout);
 
         return spinner;
