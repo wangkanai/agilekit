@@ -10,7 +10,6 @@ import { Help } from './helpers/help.js';
 
 const program = new Command();
 
-
 program.name('agilekit')
     .version('1.0.0', '-v, --version', 'output the version number')
     .description('AgileKit CLI tool');

@@ -53,9 +53,5 @@ export class Banner {
         const taglinePadding = Math.max(0, Math.floor((terminalWidth - tagline.length) / 2));
         console.log(' '.repeat(taglinePadding) + chalk.yellowBright.italic(tagline));
     }
-
-    public toString(): string {
-        return this.banner;
-    }
 }
 
