@@ -6,7 +6,7 @@ import './commands/check.js';
 
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { Banner } from './banner.js';
+import { Banner } from './helpers/banner.js';
 
 const program = new Command();
 
