@@ -1,7 +1,9 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[####-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/agile/features/[###-feature-name]/spec.md`
+- **Branch**: `[####-feature-name]`
+- **Date**: [DATE]
+- **Spec**: [link]
+- **Input**: Feature specification from `/agile/features/[###-feature-name]/spec.md`
 
 **Note**: This template is filled in by the `/agile.plan` command. See `.agile/templates/commands/plan.md` for the execution workflow.
 
@@ -17,14 +19,14 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., .NET 10, TypeScript 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, Sqlite, files or N/A]  
-**Testing**: [e.g., xUnit, bUnit, jest or NEEDS CLARIFICATION]  
+**Language/Version**: [e.g., .NET 10, TypeScript 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+**Storage**: [if applicable, e.g., PostgreSQL, Sqlite, files or N/A]
+**Testing**: [e.g., xUnit, bUnit, jest or NEEDS CLARIFICATION]
 **Target Platform**: [e.g., Linux server, Android +35, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
+**Project Type**: [single/web/mobile - determines source structure]
+**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
