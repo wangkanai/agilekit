@@ -3,12 +3,17 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Project artifacts
+agile/
+.agile/
+
 # AI generated files
 repomix-output.*
 
 # TypeScript build output
 *.tsbuildinfo
 dist/
+bin/
 
 # User-specific files
 *.rsuser
