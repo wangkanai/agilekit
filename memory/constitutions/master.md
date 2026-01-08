@@ -1,4 +1,4 @@
-# [PROJECT_NAME] Constitution
+# [PROJECT_NAME] Master Constitution
 <!-- Example: Agile Constitution, Sugarcane Constitution, etc. -->
 
 ## Core Rules
