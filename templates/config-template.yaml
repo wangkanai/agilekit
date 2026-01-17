@@ -1,0 +1,98 @@
+# Per-Epic Configuration: [EPIC_NAME]
+
+# This file overrides `.agile/config.yaml` settings for this specific epic
+# Only include values that differ from the central configuration
+
+epic:
+    interactive_clarification: true
+    auto_identify_affected_packages: true
+
+plan:
+    auto_detect_feature_boundaries: true
+    max_concurrent_creation: 3
+    interactive_validation: true
+    # Options: "single", "web", "mobile" - determines source structure
+    default_project_type: 'single'
+
+analyze:
+    generate_gantt_charts: true
+    # Risk multiplier for time estimation
+    estimate_risk_multipliers:
+        low: 1.0
+        medium: 1.3
+        high: 1.5
+
+orchestrate:
+    # Craft mode specific overrides
+    craft:
+        max_parallel_agents: 4
+        polling_interval_seconds: 30
+        confirmation_mode: 'on_first_failure'
+        failure_abort: 'critical_path'
+        merge_strategy: 'smart'
+        checkpoint_cleanup: true
+        retry_on_commit_fail: 3
+        retry_backoff_seconds: 2
+        agent_timeout_seconds: 3600
+
+    # Ship mode specific overrides
+    ship:
+        max_parallel_deployments: 2
+        deployment_strategy: 'blue-green'
+        auto_rollback_on_failure: true
+        monitoring_delay_seconds: 300
+        validation_timeout_seconds: 1800
+        canary_percentage: 10
+        canary_duration_seconds: 600
+        rollback_validation_seconds: 300
+        notify_on_deployment: true
+        notify_on_validation: true
+        notify_on_rollback: true
+
+# Feature-specific configuration
+features:
+    001-entity-alignment:
+        craft:
+            agent_timeout_seconds: 7200 # 2 hours (HIGH risk)
+            max_retries: 5
+        ship:
+            deployment_strategy: 'canary'
+            canary_percentage: 5 # Safer for entity changes
+
+    002-repository-fixes:
+        craft:
+            agent_timeout_seconds: 5400 # 1.5 hours
+            max_retries: 3
+
+# This epic's dependencies and special requirements
+dependencies:
+    external_services: []
+    database_migrations: false
+    infrastructure_changes: false
+    api_changes: false
+    breaking_changes: false
+
+# Verification checklist (auto-generated and tracked)
+verification:
+    constitution_compliance:
+        master_principles: 'pending'
+        domain_principles: 'pending'
+        epic_governance: 'pending'
+
+    testing:
+        unit_tests: 'pending'
+        integration_tests: 'pending'
+
+    documentation:
+        epic_spec: 'pending'
+        epic_plan: 'pending'
+        feature_specs: 'pending'
+        feature_plans: 'pending'
+        feature_tasks: 'pending'
+
+# Custom variables specific to this epic
+variables:
+    # Add any custom variables here that templates might reference
+    # These will be available as $VARIABLE_NAME in templates
+    custom_variable: 'custom_value'
+    another_variable: 'another_value'
