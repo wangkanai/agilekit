@@ -4,13 +4,13 @@
 ## Core Rules
 
 ### 1. Framework
-`/rules/framework.md`
+`/.agile/framework.md`
 
 ### 2. Architecture
-`/rules/architecture.md`
+`/.agile/architecture.md`
 
 ### 3. Standards
-`/rules/standards.md`
+`/.agile/standards.md`
 
 ## Core Principles
 
